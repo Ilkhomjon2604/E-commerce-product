@@ -1,3 +1,34 @@
+/* Costum-Props  */
+:root{
+  --text-color: #69707D;
+  --text-color-dark:#1D2026;
+  --coral: #FF7E1B;
+  --coral-light:#ffeee2;
+  --light-bg:#f6f8fd;
+
+  --box-shadow:0px 20px 50px -20px #FF7E1B;
+  --font:"Kumbh Sans", "Arial", sans-serif;
+
+}
+/* Font-Face */
+/* kumbh-sans-regular - latin */
+@font-face {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+  url("../fonts/kumbh-sans-v11-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("../fonts/kumbh-sans-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* kumbh-sans-700 - latin */
+@font-face {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+  url("../fonts/kumbh-sans-v11-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("../fonts/kumbh-sans-v11-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,11 +48,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: var(--font);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 26px;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color);
 }
 
 img {
@@ -33,9 +64,9 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1158px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
 }
