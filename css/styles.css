@@ -94,7 +94,6 @@ a{
   padding-top: 28px ;
   padding-bottom: 34px;
   border-bottom: 1px solid  #E4E9F2;
-  ;
 }
 .nav-wrapper {
   display: flex;
@@ -154,8 +153,68 @@ a{
 Basket part  */
 
 .user-info {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
 }
 .basket {
+  position: relative;
+  margin-right: 47px;
+
+}
+.basket_appearance:hover{
+  color:var(--text-color-dark)
+}
+
+.number_of_items {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  left:15px;
+  padding: 2px 8px;
+  background-color:var(--coral);
+  border-radius:6.5px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+}
+.card_container {
+  position: absolute;
+  top: 50px;
+  left: -150px;
+  width: 360px;
+  padding: 24px 24px 32px ;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+  border-radius: 10px;
+}
+
+.card_title{
+  padding-bottom: 27px ;
+  border-bottom: 1px solid #E4E9F2;
+}
+.card_title span{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color-dark);
+}
+.item_container{
+  padding: 24px 0;
+  position: relative;
+}
+.empty_card{
+  text-align: center;
+  padding-top: 53px;
+  padding-bottom: 61px;
 }
 .user-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border:2px solid transparent;
+  box-sizing: content-box;
+}
+.user-pic:hover {
+  border: 2px solid var(--coral);
 }
