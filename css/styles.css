@@ -211,7 +211,11 @@ Basket part  */
   height: 100%;
   flex-grow: 1;
 }
+
 .empty_card{
+  display: none;
+}
+.empty_item_container .empty_card{
   display: flex;
   justify-content: center;
   align-items:center;
