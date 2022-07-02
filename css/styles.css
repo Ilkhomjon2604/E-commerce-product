@@ -78,7 +78,9 @@ a{
   margin-right: auto;
 }
 
-
+.visually_hidden{
+  display: none;
+}
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
