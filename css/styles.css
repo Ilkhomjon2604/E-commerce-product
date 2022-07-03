@@ -193,6 +193,7 @@ Basket part  */
   min-height: 256px;
   display: flex;
   flex-direction: column;
+  display: none;
 
 }
 
