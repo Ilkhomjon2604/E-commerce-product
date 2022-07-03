@@ -3,6 +3,7 @@
   --text-color: #69707D;
   --text-color-dark:#1D2026;
   --coral: #FF7E1B;
+  --coral-light:#FFAB6A;
   --coral-light:#ffeee2;
   --light-bg:#f6f8fd;
 
@@ -207,7 +208,7 @@ Basket part  */
 }
 .item_container{
   position: relative;
-  padding: 24px 0;
+  padding-top: 24px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -233,4 +234,72 @@ Basket part  */
 }
 .user-pic:hover {
   border: 2px solid var(--coral);
+}
+
+
+/* shopping Card  */
+.shopping-card__wrapper {
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+.shopping-card_item {
+  margin-bottom: 26px;
+}
+.shopping-card__product {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.shopping_card__item_img {
+  margin-right: 16px;
+  border-radius:4px;
+  width: 50px;
+  height: 50px;
+}
+
+.shopping-card__Product_title {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+}
+.shopping-card-item_price {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+.totle_price {
+}
+.remove_btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.item_remove{
+  color: var(--text-color);
+  cursor: pointer;
+}
+.item_remove:hover{
+  color: var(--text-color-dark);
+}
+
+
+.btn-product__submit{
+  width: 100%;
+  padding: 20px 0;
+  background-color:var(--coral);
+  cursor: pointer;
+  border-radius:10px;
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-product__submit:hover{
+  opacity: 0.7;
+}
+.btn-product__submit:active{
+  opacity: 0.5;
 }
