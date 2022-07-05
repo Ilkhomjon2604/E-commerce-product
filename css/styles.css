@@ -387,19 +387,43 @@ Basket part  */
 .main-price {
   font-weight: 700;
   font-size: 16px;
-line-height: 26px;
-text-decoration-line: line-through;
-color: #B6BCC8;
-margin-top: 10px;
+  line-height: 26px;
+  text-decoration-line: line-through;
+  color: #B6BCC8;
+  margin-top: 10px;
 }
 
 .btns-wrapper {
+  display: flex;
+
 }
 .item_counter {
+  display: flex;
+  justify-content: space-between;
+  width: 167px;
+  padding: 26px 16px;
+  margin-right: 16px;
+  font-weight: 700;
+  border-radius:10px;
+  background-color:var(--light-bg);
+
 }
 .minus {
+  font-weight: 700;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--coral);
+  cursor:pointer;
+    cursor:pointer;
+    padding: 3px;
 }
 .plus {
-}
-.btn-product__submit {
+  font-weight: 700;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--coral);
+    cursor:pointer;
+    padding: 3px;
 }
