@@ -243,11 +243,15 @@ Basket part  */
 
 
 /* shopping Card  */
+
+.shopping-card-self{
+  display: none;
+}
 .shopping-card__wrapper {
   padding: 0;
   margin: 0;
   flex-grow: 1;
-  display: none;
+
 }
 .shopping-card__wrapper-open{
   display: block;
@@ -266,12 +270,20 @@ Basket part  */
   width: 50px;
   height: 50px;
 }
+.shopping-card__product_info{
+  width: 100%;
+  overflow: hidden;
+
+}
 
 .shopping-card__Product_title {
   padding: 0;
   margin: 0;
   font-size: 14px;
   line-height: 26px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .shopping-card-item_price {
   padding: 0;
@@ -423,15 +435,21 @@ Basket part  */
   border: none;
   color: var(--coral);
   cursor:pointer;
-    cursor:pointer;
-    padding: 3px;
+  cursor:pointer;
+  padding: 3px;
 }
+
 .plus {
   font-weight: 700;
   background-color: transparent;
   outline: none;
   border: none;
   color: var(--coral);
-    cursor:pointer;
-    padding: 3px;
+  cursor:pointer;
+  padding: 3px;
+}
+
+.minus:hover , .plus:hover{
+  background-color:var(--coral);
+  color: #fff;
 }

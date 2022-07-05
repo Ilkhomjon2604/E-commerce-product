@@ -10,8 +10,11 @@
 let elBasket = document.querySelector('.basket');
 let elCardContainer = document.querySelector('.card_container');
 let elNumberIndicator =  document.querySelector('.number_of_items');
+let elShoppingCardProduct =   document.querySelector('.shopping-card__wrapper');
 
 
 elBasket.addEventListener('click' , function(){
   elCardContainer.classList.toggle('card_container__open')
 });
+
+console.log(elShoppingCardProduct);
