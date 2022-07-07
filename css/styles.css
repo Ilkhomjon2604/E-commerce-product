@@ -388,6 +388,7 @@ Basket part  */
   width: 88px;
   height: 88px;
   object-fit: cover;
+  cursor: pointer;
 
 }
 .small-imgs-wrapper-self{
