@@ -394,12 +394,18 @@ Basket part  */
   padding: 0;
   margin: 0;
   background-color:transparent;
-  border: none;
+  border: 1px solid transparent;
   flex-shrink: 0;
+}
+.btn-acive-img{
+  border-radius:10px;
+  border: 1px solid var(--coral);
+  opacity: 0.6;
 }
 
   .small-imgs-wrapper-self:not(:last-child){
-    margin-right: 31px;
+    margin-right: 28px;
+
   }
 
   .bunch_of__snerakers:hover {
