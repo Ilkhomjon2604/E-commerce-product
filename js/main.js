@@ -37,6 +37,8 @@ let elMainImage = document.querySelector('.main_img');
 let elsBunchOfImages = document.querySelectorAll('.bunch_of__snerakers');
 let elsbtnOfImages =  document.querySelectorAll('.small-imgs-wrapper-self');
 
+
+
 elsbtnOfImages.forEach( function(elButton){
   elButton.addEventListener('click', function (){
 
@@ -49,6 +51,9 @@ elsbtnOfImages.forEach( function(elButton){
 
     elButton.classList.add('btn-acive-img')
 
+    console.log( elButton.dataset);
+
   });
+
 
 });
