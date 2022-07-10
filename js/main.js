@@ -51,8 +51,11 @@ elsbtnOfImages.forEach( function(elButton){
 
     elButton.classList.add('btn-acive-img')
 
-    console.log( elButton.dataset);
 
+
+    // elMainImage.src = elButton.dataset.imgShowcaseBig;
+    elMainImage.setAttribute('src', elButton.dataset.imgShowcaseBig);
+    console.log(elMainImage.src)
   });
 
 

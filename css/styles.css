@@ -63,6 +63,8 @@ img {
 
 ul{
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 a{
   text-decoration: none;
@@ -380,6 +382,15 @@ Basket part  */
   overflow-x: auto;
   padding-bottom: 10px;
 }
+
+.img-showcase__thumnail{
+  display: block;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
+
+}
+
 .bunch_of__snerakers {
   border-radius: 10px;
   display: block;
@@ -396,7 +407,6 @@ Basket part  */
   margin: 0;
   background-color:transparent;
   border: 1px solid transparent;
-  flex-shrink: 0;
 }
 .btn-acive-img{
   border-radius:10px;
@@ -404,7 +414,7 @@ Basket part  */
   opacity: 0.6;
 }
 
-  .small-imgs-wrapper-self:not(:last-child){
+  .img-showcase__thumnail:not(:last-child){
     margin-right: 28px;
 
   }
