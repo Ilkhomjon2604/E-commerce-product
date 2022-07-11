@@ -54,8 +54,13 @@ elsbtnOfImages.forEach( function(elButton){
 
 
     // elMainImage.src = elButton.dataset.imgShowcaseBig;
-    elMainImage.setAttribute('src', elButton.dataset.imgShowcaseBig);
-    console.log(elMainImage.src)
+    elMainImage.src= elButton.dataset.imgShowcaseBig;
+
+    elMainImage.setAttribute.srcset = `${elButton.dataset.imgShowcaseBig} 1x, ${elButton.dataset.imgShowcaseRetina} 2x`;
+    // rasm yoq ekan 2x
+
+
+    console.log(elButton.dataset)
   });
 
 
