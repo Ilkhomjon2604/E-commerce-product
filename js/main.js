@@ -48,19 +48,13 @@ elsbtnOfImages.forEach( function(elButton){
     });
 
     // add active class to current element
-
     elButton.classList.add('btn-acive-img')
-
-
 
     // elMainImage.src = elButton.dataset.imgShowcaseBig;
     elMainImage.src= elButton.dataset.imgShowcaseBig;
 
     elMainImage.setAttribute.srcset = `${elButton.dataset.imgShowcaseBig} 1x, ${elButton.dataset.imgShowcaseRetina} 2x`;
     // rasm yoq ekan 2x
-
-
-    console.log(elButton.dataset)
   });
 
 

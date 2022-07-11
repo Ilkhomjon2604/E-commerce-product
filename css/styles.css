@@ -370,11 +370,23 @@ Basket part  */
   width: 445px;
 
 }
-.main_img {
+.img-showcase{
   width: 445px;
   height: 445px;
   border-radius: 15px;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.Light-box-toggle{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: transparent;
+  border-radius:10px;
+  padding: 0;
+  margin: 0;
+  background-color:transparent;
 }
 .small-imgs-wrapper {
   display: flex;
