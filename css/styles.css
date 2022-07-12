@@ -386,6 +386,7 @@ Basket part  */
   padding: 0;
   margin: 0;
   background-color:transparent;
+  cursor: zoom-in;
 }
 .small-imgs-wrapper {
   display: flex;
@@ -426,7 +427,7 @@ Basket part  */
 }
 
 .img-showcase__thumnail:not(:last-child){
-  margin-right: 28px;
+  margin-right: auto;
 
 }
 
@@ -532,6 +533,7 @@ Basket part  */
 
 /* LIGHT BOX STYLE  */
 .light-box {
+  display: none;
   position:fixed;
   width: 100%;
   height: 100%;
@@ -540,7 +542,13 @@ Basket part  */
   top: 0;
   left: 0;
   background-color: #000000cb;
+  overflow-x: auto;
 }
+
+.light-box-open{
+  display: block;
+}
+
 .light-box-wrapper{
   width: 100%;
   max-width: 550px;

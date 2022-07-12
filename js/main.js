@@ -40,8 +40,8 @@ let elsbtnOfImages =  document.querySelectorAll('.small-imgs-wrapper-self');
 
 
 elsbtnOfImages.forEach( function(elButton){
-  elButton.addEventListener('click', function (){
 
+  elButton.addEventListener('click', function (){
     // remove active class
     elsbtnOfImages.forEach( function(elButton){
       elButton.classList.remove('btn-acive-img')
@@ -59,3 +59,22 @@ elsbtnOfImages.forEach( function(elButton){
 
 
 });
+
+// Light box toggle
+
+let lightBoxOpen = document.querySelector('.Light-box-toggle');
+let lightBox = document.querySelector('.light-box');
+let lightBoxClose = document.querySelector('.close-light-box');
+let lightBoxControllerRight = document.querySelector('.light-box-controller-right');
+let lightBoxControllerLeft = document.querySelector('.light-box-controller-left');
+
+if(lightBoxOpen){
+  lightBoxOpen.addEventListener('click', function(){
+    lightBox.classList.add('light-box-open');
+  });
+
+  lightBoxClose.addEventListener('click', function(){
+    lightBox.classList.remove('light-box-open');
+  })
+
+};
