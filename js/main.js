@@ -162,7 +162,6 @@ if(eLlightBoxControllerPrev){
     elMainImageLight.src= prevActiveitem.children[0].dataset.imgShowcaseBig;
 
     elMainImageLight.setAttribute.srcset = `${prevActiveitem.children[0].dataset.imgShowcaseBig} 1x, ${prevActiveitem.children[0].dataset.imgShowcaseRetina} 2x`;
-    // rasm yoq ekan 2x
 
   })
 }
