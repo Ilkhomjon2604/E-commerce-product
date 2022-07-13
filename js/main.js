@@ -164,4 +164,34 @@ if(eLlightBoxControllerPrev){
     elMainImageLight.setAttribute.srcset = `${prevActiveitem.children[0].dataset.imgShowcaseBig} 1x, ${prevActiveitem.children[0].dataset.imgShowcaseRetina} 2x`;
 
   })
-}
+};
+
+// Number of items increase and decrease
+let elMinusBtn = document.querySelector('.js-minus-btn');
+let elPlusBtn = document.querySelector('.js-plus-btn');
+let elNumberIndicate = document.querySelector('.item-number-indicator');
+
+if (elPlusBtn) {
+  elPlusBtn.addEventListener('click', function(){
+    elNumberIndicate.textContent = parseInt (elNumberIndicate.textContent, 10) +1;
+
+  });
+
+};
+
+if (elMinusBtn) {
+  elMinusBtn.addEventListener('click', function(){
+
+    let qty = parseInt (elNumberIndicate.textContent, 10);
+
+    if (qty > 0 ){
+      elNumberIndicate.textContent = parseInt (elNumberIndicate.textContent, 10) -1;
+
+
+    }
+
+
+
+  });
+
+};

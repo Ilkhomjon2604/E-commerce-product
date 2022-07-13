@@ -173,79 +173,83 @@
 
           <div class="btns-wrapper">
 
-            <div class="item_counter"> <button class="minus">-</button> 0 <button class="plus">+</button></div>
+            <div class="item_counter">
+              <button class="minus js-minus-btn">-</button>
+              <span class="item-number-indicator">0</span>
+              <button class="plus js-plus-btn">+</button>
+            </div>
 
-            <button class="btn-product__submit"> <img src="img/savat.svg" alt=""> Add to cart</button>
+              <button class="btn-product__submit"> <img src="img/savat.svg" alt=""> Add to cart</button>
+            </div>
+
           </div>
 
         </div>
-
       </div>
-    </div>
-  </main>
+    </main>
 
-  <!-- Light Box  -->
-  <div class="light-box">
+    <!-- Light Box  -->
+    <div class="light-box">
 
-    <div class="light-box-wrapper">
-
-
-      <!-- light box close  -->
-      <button class="close-light-box" type="button">
-        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 2.857 17.143 0 10 7.143 2.857 0 0 2.857 7.143 10 0 17.143 2.857 20 10 12.857 17.143 20 20 17.143 12.857 10 20 2.857Z" fill="currentColor"/></svg>
-      </button>
-
-      <!-- light box main content  -->
-      <!-- <div class="product_wrapper"> -->
-        <div class="product-img">
-
-          <div class="img-showcase">
-
-            <button class="light-box-controller light-box-controller-left " type="button">
-              <svg  class="light-box-controller-icon" width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11 2-8 8 8 8" stroke="currentColor" stroke-width="3"/></svg>
-            </button>
+      <div class="light-box-wrapper">
 
 
-            <button class="light-box-controller light-box-controller-right " type="button">
-              <svg class="light-box-controller-icon" width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m2 2 8 8-8 8" stroke="currentColor" stroke-width="3"/></svg>
-            </button>
+        <!-- light box close  -->
+        <button class="close-light-box" type="button">
+          <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 2.857 17.143 0 10 7.143 2.857 0 0 2.857 7.143 10 0 17.143 2.857 20 10 12.857 17.143 20 20 17.143 12.857 10 20 2.857Z" fill="currentColor"/></svg>
+        </button>
 
+        <!-- light box main content  -->
+        <!-- <div class="product_wrapper"> -->
+          <div class="product-img">
 
-            <img class="main_img" src="img/Img-sneakers01.jpg" alt="Picture of main sneakers " width="445" height="445" >
-          </div>
+            <div class="img-showcase">
 
-          <ul class="small-imgs-wrapper">
-
-            <li class=" img-showcase__thumnail btn-acive-img">
-              <button class="small-imgs-wrapper-self js-light-box-small-imgs-wrapper " data-img-showcase-big ="img/Img-sneakers02@2x-light.jpg" data-img-showcase-retina ="img/Img-sneakers02@2x-light.jpg" >
-
-                <img class="bunch_of__snerakers" src="img/Img-sneakers02.jpg" alt="small item img" width="88" height="88" srcset="img/Img-sneakers02.jpg 1x, img/Img-sneakers02@2x.jpg 2x " aria-label="Image of sneakers "  >
+              <button class="light-box-controller light-box-controller-left " type="button">
+                <svg  class="light-box-controller-icon" width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11 2-8 8 8 8" stroke="currentColor" stroke-width="3"/></svg>
               </button>
 
-            </li>
 
-            <li class=" img-showcase__thumnail">
-              <button class="small-imgs-wrapper-self js-light-box-small-imgs-wrapper" data-img-showcase-big ="img/Img-sneakers03@2x-light.jpg" data-img-showcase-retina ="img/Img-sneakers03@2x-light.jpg">
-
-                <img class="bunch_of__snerakers" src="img/Img-sneakers03.jpg" alt="small item img" width="88" height="88" srcset="img/Img-sneakers03.jpg 1x, img/Img-sneakers03@2x.jpg 2x " aria-label="Image of sneakers "  >
+              <button class="light-box-controller light-box-controller-right " type="button">
+                <svg class="light-box-controller-icon" width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m2 2 8 8-8 8" stroke="currentColor" stroke-width="3"/></svg>
               </button>
 
-            </li>
-            <li class=" img-showcase__thumnail">
-              <button class="small-imgs-wrapper-self js-light-box-small-imgs-wrapper"  data-img-showcase-big ="img/Img-sneakers04@2x-light.jpg" data-img-showcase-retina ="img/Img-sneakers04@2x-light.jpg">
 
-                <img class="bunch_of__snerakers" src="img/Img-sneakers04.jpg" alt="small item img" width="88" height="88" srcset="img/Img-sneakers04.jpg 1x, img/Img-sneakers04@2x.jpg 2x " aria-label="Image of sneakers " >
-              </button>
+              <img class="main_img" src="img/Img-sneakers01.jpg" alt="Picture of main sneakers " width="445" height="445" >
+            </div>
 
-            </li>
+            <ul class="small-imgs-wrapper">
 
-            <li class=" img-showcase__thumnail">
-              <button class="small-imgs-wrapper-self js-light-box-small-imgs-wrapper"  data-img-showcase-big ="img/Img-sneakers05@2x-light.jpg" data-img-showcase-retina ="img/Img-sneakers05@2x-light.jpg">
+              <li class=" img-showcase__thumnail btn-acive-img">
+                <button class="small-imgs-wrapper-self js-light-box-small-imgs-wrapper " data-img-showcase-big ="img/Img-sneakers02@2x-light.jpg" data-img-showcase-retina ="img/Img-sneakers02@2x-light.jpg" >
 
-                <img class="bunch_of__snerakers" src="img/Img-sneakers05.jpg" alt="small item img" width="88" height="88" srcset="img/Img-sneakers05.jpg 1x, img/Img-sneakers05@2x.jpg 2x " aria-label="Image of sneakers " >
-              </button>
+                  <img class="bunch_of__snerakers" src="img/Img-sneakers02.jpg" alt="small item img" width="88" height="88" srcset="img/Img-sneakers02.jpg 1x, img/Img-sneakers02@2x.jpg 2x " aria-label="Image of sneakers "  >
+                </button>
 
-            </li>
+              </li>
+
+              <li class=" img-showcase__thumnail">
+                <button class="small-imgs-wrapper-self js-light-box-small-imgs-wrapper" data-img-showcase-big ="img/Img-sneakers03@2x-light.jpg" data-img-showcase-retina ="img/Img-sneakers03@2x-light.jpg">
+
+                  <img class="bunch_of__snerakers" src="img/Img-sneakers03.jpg" alt="small item img" width="88" height="88" srcset="img/Img-sneakers03.jpg 1x, img/Img-sneakers03@2x.jpg 2x " aria-label="Image of sneakers "  >
+                </button>
+
+              </li>
+              <li class=" img-showcase__thumnail">
+                <button class="small-imgs-wrapper-self js-light-box-small-imgs-wrapper"  data-img-showcase-big ="img/Img-sneakers04@2x-light.jpg" data-img-showcase-retina ="img/Img-sneakers04@2x-light.jpg">
+
+                  <img class="bunch_of__snerakers" src="img/Img-sneakers04.jpg" alt="small item img" width="88" height="88" srcset="img/Img-sneakers04.jpg 1x, img/Img-sneakers04@2x.jpg 2x " aria-label="Image of sneakers " >
+                </button>
+
+              </li>
+
+              <li class=" img-showcase__thumnail">
+                <button class="small-imgs-wrapper-self js-light-box-small-imgs-wrapper"  data-img-showcase-big ="img/Img-sneakers05@2x-light.jpg" data-img-showcase-retina ="img/Img-sneakers05@2x-light.jpg">
+
+                  <img class="bunch_of__snerakers" src="img/Img-sneakers05.jpg" alt="small item img" width="88" height="88" srcset="img/Img-sneakers05.jpg 1x, img/Img-sneakers05@2x.jpg 2x " aria-label="Image of sneakers " >
+                </button>
+
+              </li>
 
 
 
