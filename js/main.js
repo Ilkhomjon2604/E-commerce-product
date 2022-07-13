@@ -35,7 +35,7 @@ else{
 // Img event js
 let elMainImage = document.querySelector('.main_img');
 let elsBunchOfImages = document.querySelectorAll('.bunch_of__snerakers');
-let elsbtnOfImages =  document.querySelectorAll('.small-imgs-wrapper-self');
+let elsbtnOfImages =  document.querySelectorAll('.js-small-imgs-wrapper');
 
 
 
@@ -77,4 +77,31 @@ if(lightBoxOpen){
     lightBox.classList.remove('light-box-open');
   })
 
+};
+
+// Light box showcase
+
+let elMainImageLight = lightBox.querySelector('.main_img');
+let elsBunchOfImagesLight = lightBox.querySelectorAll('.bunch_of__snerakers');
+let elsbtnOfImagesLight =  lightBox.querySelectorAll('.js-light-box-small-imgs-wrapper');
+
+if (lightBox){
+  elsbtnOfImagesLight.forEach( function(elButton){
+
+    elButton.addEventListener('click', function (){
+      // remove active class
+      elsbtnOfImagesLight.forEach( function(elButton){
+        elButton.classList.remove('btn-acive-img')
+      });
+
+      // add active class to current element
+      elButton.classList.add('btn-acive-img')
+
+      // elMainImage.src = elButton.dataset.imgShowcaseBig;
+      elMainImageLight.src= elButton.dataset.imgShowcaseBig;
+
+      elMainImageLight.setAttribute.srcset = `${elButton.dataset.imgShowcaseBig} 1x, ${elButton.dataset.imgShowcaseRetina} 2x`;
+      // rasm yoq ekan 2x
+    });
+  });
 };
