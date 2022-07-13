@@ -65,8 +65,7 @@ elsbtnOfImages.forEach( function(elButton){
 let lightBoxOpen = document.querySelector('.Light-box-toggle');
 let lightBox = document.querySelector('.light-box');
 let lightBoxClose = document.querySelector('.close-light-box');
-let lightBoxControllerRight = document.querySelector('.light-box-controller-right');
-let lightBoxControllerLeft = document.querySelector('.light-box-controller-left');
+
 
 if(lightBoxOpen){
   lightBoxOpen.addEventListener('click', function(){
@@ -105,3 +104,65 @@ if (lightBox){
     });
   });
 };
+
+
+let eLlightBoxControllerNext = document.querySelector('.light-box-controller-right');
+let eLlightBoxControllerPrev = document.querySelector('.light-box-controller-left');
+let elsSmallImgsWrapper = lightBox.querySelectorAll('.img-showcase__thumnail')
+
+
+
+
+if(eLlightBoxControllerNext){
+  eLlightBoxControllerNext.addEventListener('click', function(){
+    // find an active item
+    let elActiveItem = lightBox.querySelector('.btn-acive-img');
+
+    // remove active class from active item
+    elActiveItem.classList.remove('btn-acive-img');
+
+    let nextActiveitem;
+    if(elActiveItem.nextElementSibling === null){
+      nextActiveitem = elsSmallImgsWrapper[0];
+    }
+    else{
+      nextActiveitem = elActiveItem.nextElementSibling;
+    };
+
+    nextActiveitem.classList.add('btn-acive-img');
+
+    // elMainImage.src = elButton.dataset.imgShowcaseBig;
+    elMainImageLight.src= nextActiveitem.children[0].dataset.imgShowcaseBig;
+
+    elMainImageLight.setAttribute.srcset = `${nextActiveitem.children[0].dataset.imgShowcaseBig} 1x, ${nextActiveitem.children[0].dataset.imgShowcaseRetina} 2x`;
+    // rasm yoq ekan 2x
+
+  })
+}
+
+if(eLlightBoxControllerPrev){
+  eLlightBoxControllerPrev.addEventListener('click', function(){
+    // find an active item
+    let elActiveItem = lightBox.querySelector('.btn-acive-img');
+
+    // remove active class from active item
+    elActiveItem.classList.remove('btn-acive-img');
+
+    let prevActiveitem;
+    if(elActiveItem.previousElementSibling === null){
+      prevActiveitem = elsSmallImgsWrapper[3];
+    }
+    else{
+      prevActiveitem = elActiveItem.previousElementSibling;
+    };
+
+    prevActiveitem.classList.add('btn-acive-img');
+
+    // elMainImage.src = elButton.dataset.imgShowcaseBig;
+    elMainImageLight.src= prevActiveitem.children[0].dataset.imgShowcaseBig;
+
+    elMainImageLight.setAttribute.srcset = `${prevActiveitem.children[0].dataset.imgShowcaseBig} 1x, ${prevActiveitem.children[0].dataset.imgShowcaseRetina} 2x`;
+    // rasm yoq ekan 2x
+
+  })
+}

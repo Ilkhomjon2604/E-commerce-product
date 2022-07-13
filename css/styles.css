@@ -397,7 +397,7 @@ Basket part  */
 
 .img-showcase__thumnail{
   display: block;
-  padding: 0;
+  padding: 0 !important;
   margin: 0;
   flex-shrink: 0;
 
